@@ -6,58 +6,63 @@
     <style>
         body {
             margin: 0;
-            font-family: "Georgia", serif;
-            background: linear-gradient(to bottom right, #e9d7f3, #cfa9e6);
+            font-family: 'Georgia', serif;
+            background: #f9f4fb;
             color: #4b2a63;
             text-align: center;
         }
 
         header {
+            background-image: url('yourimage.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        section {
             padding: 60px 20px;
         }
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 40px;
-        }
-
-        .section {
-            padding: 40px 20px;
-        }
-
-        .box {
+        .card {
             background: white;
             margin: 20px auto;
-            padding: 25px;
+            padding: 30px;
             width: 80%;
             max-width: 500px;
             border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
-        .button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #7b4fa0;
+        img.service-img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 14px 30px;
+            background: #7b4fa0;
             color: white;
             border: none;
-            border-radius: 25px;
-            cursor: pointer;
+            border-radius: 30px;
             font-size: 16px;
+            cursor: pointer;
         }
 
-        .button:hover {
-            background-color: #5f3b7a;
+        button:hover {
+            background: #5f3b7a;
         }
 
         footer {
-            padding: 30px;
-            background-color: #4b2a63;
+            background: #4b2a63;
             color: white;
+            padding: 30px;
         }
     </style>
 </head>
@@ -68,30 +73,37 @@
     <p>Angelic, Reiki & Crystal Practitioner</p>
 </header>
 
-<div class="section">
-    <div class="box">
+<section>
+
+    <div class="card">
+        <img class="service-img" src="angel.jpg">
         <h2>Angelic Healing</h2>
-        <p>Sense of peace & comfort</p>
-        <p>Emotional healing</p>
-        <p>Release of negative energy</p>
-        <p>Spiritual support & guidance</p>
-        <p>Increased clarity & calm</p>
+        <p>Emotional healing, spiritual guidance and inner peace.</p>
     </div>
 
-    <div class="box">
+    <div class="card">
+        <img class="service-img" src="reiki.jpg">
         <h2>Reiki Healing</h2>
-        <p>Deep relaxation</p>
-        <p>Stress & anxiety relief</p>
-        <p>Emotional balance</p>
-        <p>Improved sleep</p>
-        <p>Supports natural healing</p>
-        <p>Restores energy flow</p>
+        <p>Deep relaxation, stress relief and energy balance.</p>
     </div>
 
-    <div class="box">
-        <h2>Facial Acupressure</h2>
-        <p>Gentle facial pressure techniques to restore balance and promote relaxation.</p>
+    <div class="card">
+        <img class="service-img" src="crystal.jpg">
+        <h2>Crystal Healing</h2>
+        <p>Restore harmony and promote natural healing.</p>
     </div>
 
-    <button class="button" onclick="window.location.href='mailto:pureenergyita@gmail.com'">
-       
+    <button onclick="window.location.href='mailto:pureenergyita@gmail.com'">
+        Book Now
+    </button>
+
+</section>
+
+<footer>
+    <p>Ita Tunney RGN/RM</p>
+    <p>087 931 9088</p>
+    <p>pureenergyita@gmail.com</p>
+</footer>
+
+</body>
+</html>
