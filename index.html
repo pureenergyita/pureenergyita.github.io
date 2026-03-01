@@ -26,15 +26,40 @@
             padding: 60px 20px;
         }
 
-        .service-img {
-            width: 80%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .hex {
+            background: #9a84b8;
+            color: white;
+            padding: 40px 25px;
+            width: 260px;
+            clip-path: polygon(
+                25% 5%, 75% 5%,
+                100% 50%, 75% 95%,
+                25% 95%, 0% 50%
+            );
+        }
+
+        .hex h2 {
+            margin-top: 0;
+            background: #6f4a91;
+            padding: 8px 15px;
             border-radius: 20px;
+            font-size: 18px;
+        }
+
+        .hex p {
+            font-size: 15px;
+            line-height: 1.6;
         }
 
         button {
+            margin-top: 50px;
             padding: 14px 30px;
             background: #7b4fa0;
             color: white;
@@ -66,7 +91,32 @@
 
 <section>
 
-    <img src="healing-services.jpg" alt="Healing Services" class="service-img">
+    <div class="services">
+
+        <div class="hex">
+            <h2>Angelic Healing</h2>
+            <p>
+                Sense of peace & comfort<br>
+                Emotional healing<br>
+                Release of negative energy<br>
+                Spiritual support & guidance<br>
+                Increased clarity & calm
+            </p>
+        </div>
+
+        <div class="hex">
+            <h2>Reiki Healing</h2>
+            <p>
+                Deep relaxation<br>
+                Stress & anxiety relief<br>
+                Emotional balance<br>
+                Improved sleep<br>
+                Supports natural healing<br>
+                Restores energy flow
+            </p>
+        </div>
+
+    </div>
 
     <button onclick="window.location.href='mailto:pureenergyita@gmail.com'">
         Book Now
