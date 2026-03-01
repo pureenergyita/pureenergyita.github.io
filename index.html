@@ -3,6 +3,7 @@
 <head>
     <title>Pure Energy - Ita Tunney</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -25,20 +26,12 @@
             padding: 60px 20px;
         }
 
-        .card {
-            background: white;
-            margin: 20px auto;
-            padding: 30px;
+        .service-img {
             width: 80%;
-            max-width: 500px;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
             border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-
-        img.service-img {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 15px;
         }
 
         button {
@@ -66,14 +59,14 @@
 <body>
 
 <header>
-    <img src="hero.jpg">
+    <img src="hero.jpg" alt="Pure Energy Banner">
     <h1>Pure Energy</h1>
     <p>Angelic, Reiki & Crystal Practitioner</p>
 </header>
 
 <section>
 
-<img src="healing-services.jpg" alt="Healing Services" style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
+    <img src="healing-services.jpg" alt="Healing Services" class="service-img">
 
     <button onclick="window.location.href='mailto:pureenergyita@gmail.com'">
         Book Now
